@@ -18,7 +18,7 @@ void heapify(int arr[],int n,int i){
     }
 }
 int main(){
-    int arr[6] = {-1,34,36,25,38,28};
+    int arr[8] = {-1,34,36,25,38,28,12,45};
     int n=5;
 
     for(int i=n/2;i>0;i--){

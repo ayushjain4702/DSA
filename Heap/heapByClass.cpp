@@ -46,7 +46,7 @@ class Heap{
                     swap(arr[i],arr[leftIndex]);
                     i = leftIndex;
                 }
-                if(rightIndex<size && arr[i]<arr[rightIndex]){
+                else if(rightIndex<size && arr[i]<arr[rightIndex]){
                     swap(arr[i],arr[rightIndex]);
                     i = rightIndex;
                 }
