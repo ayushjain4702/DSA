@@ -86,7 +86,7 @@ class Complex{
 class vehicle{
     public:
 
-    void print(){
+    virtual void print(){
         cout<<"This is a vehicle"<<endl;
     }
 };
@@ -112,14 +112,17 @@ int main(){
     // ++tt;
     // tt.display();
 
-    Complex c1(5,4);
-    Complex c2(3,5);
-    Complex c3;
-    c3 = c1+c2;
-    c3.print();
+    // Complex c1(5,4);
+    // Complex c2(3,5);
+    // Complex c3;
+    // c3 = c1+c2;
+    // c3.print();
 
-    // car c1;
-    // c1.print();
+    vehicle* ptr;
+    car d;
+    ptr  = &d;
+    ptr->print();
+
 
     return 0;
 }
